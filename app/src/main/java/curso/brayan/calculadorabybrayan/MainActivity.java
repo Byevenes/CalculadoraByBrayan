@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         sumar = 0;
         restar = 0;
-        multiplicar = 0;
-        dividir = 0;
+        multiplicar = 1;
+        dividir = 1;
 
 
         // Instanciar_todo_los_Button
@@ -234,11 +234,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 3:
                         res = Integer.toString((multiplicar * Integer.parseInt(result)));
-                        multiplicar = 0;
+                        multiplicar = 1;
                         break;
                     case 4:
                         res = Integer.toString((dividir / Integer.parseInt(result)));
-                        dividir = 0;
+                        dividir = 1;
                         break;
                 }
                 resultadofinal.setText(res);
